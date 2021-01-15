@@ -47,7 +47,7 @@ In a rough analogy, a virtual ethernet (veth) pair is like a network cable. We s
 ***
 ### Setup veth pair
 
-```c
+```
 # ip link add name veth1 type veth peer name veth2
 # ip a
 /* ... irrelevant info ... */
@@ -59,7 +59,7 @@ In a rough analogy, a virtual ethernet (veth) pair is like a network cable. We s
 
 ***
 ### Set ```veth1``` to ```$pid``` namepace
-```c
+```
 # ip link set veth1 netns $pid
 # ip a
 /* ... irrelevant info ... */
@@ -68,14 +68,14 @@ In a rough analogy, a virtual ethernet (veth) pair is like a network cable. We s
 ```
 
 From the ```ip a``` command, we could see that ```veth1``` is no longer showing as it is now being assigned into the ```$pid``` namespace. Nonetheless, we could find ```veth1``` through running ```ip a``` in the ```$pid``` netns.
-```c
+```
 # ip netns exec $pid ip a
 7: veth1@if6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
     link/ether 7a:51:6e:b8:77:ac brd ff:ff:ff:ff:ff:ff link-netnsid 0
 ```
 
 Then, we want to set up the ip for ```veth1```. And, of course it could successfully ping itself.
-``` c
+``` 
 # ip netns exec $pid ifconfig veth1 10.0.0.2/24
 # ip netns exec $pid ping 10.0.0.2
 // Success
@@ -90,7 +90,7 @@ The other end of the venv pair, ```veth2``` should be connected to the Linux bri
 
 Now, in the pipeline is to connect ```veth2``` to a bridge to be created.
 
-```c
+```
 # brctl addbr br0           // create bridge
 # brctl addif br0 veth2     // hook up with veth2
 # ifconfig br0 10.0.0.1/24  // set IP
