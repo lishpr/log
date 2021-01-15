@@ -3,7 +3,7 @@ layout: post
 title:  "Dokrust Devlog: Week 1"
 author: "Shori"
 comments: false
-tags: Dokrust
+tags: Dev
 ---
 
 *For the GitHub repo of Dokrust, visit [**here**](https://github.com/lishpr/dokrust).*
