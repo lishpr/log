@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Adding Network to a Container"
+title:  "Adding Network Support to a Container"
 author: "Shori"
 comments: false
 tags: Docs
 ---
+
+Last time, I looked into the Linux foundation of containers. But I left out one important part, networking.
 
 Docker provided four options for networking when starting a container. We may select ```--net=none``` to not set up network support for our container.
 
@@ -41,6 +43,7 @@ Examine by the following command, we could see that the netns has been successfu
 
 ## Create virtual ethernet pair
 In a rough analogy, a virtual ethernet (veth) pair is like a network cable. We should create a veth pair and hook one in the pair to the container netns.
+
 ***
 ### Setup veth pair
 
@@ -65,7 +68,7 @@ In a rough analogy, a virtual ethernet (veth) pair is like a network cable. We s
 ```
 
 From the ```ip a``` command, we could see that ```veth1``` is no longer showing as it is now being assigned into the ```$pid``` namespace. Nonetheless, we could find ```veth1``` through running ```ip a``` in the ```$pid``` netns.
-```
+```c
 # ip netns exec $pid ip a
 7: veth1@if6: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
     link/ether 7a:51:6e:b8:77:ac brd ff:ff:ff:ff:ff:ff link-netnsid 0
@@ -81,6 +84,7 @@ Then, we want to set up the ip for ```veth1```. And, of course it could successf
 ```
 
 The other end of the venv pair, ```veth2``` should be connected to the Linux bridge. And I'll talk about it in the next section.
+
 ***
 ### Create a Linux bridge
 
