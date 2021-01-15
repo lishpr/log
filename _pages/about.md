@@ -17,13 +17,13 @@ So, why not? I guess.
 
 
 <p style="text-align: center;">
-    <a href="https://github.com/lishpr" target="_blank" rel="noopener">
+    <a style="color:#555" href="https://github.com/lishpr" target="_blank" rel="noopener">
         <i class="fab fa-github fa-3x"></i>
     </a>&nbsp; &nbsp; 
-    <a href="https://www.linkedin.com/in/shoriyu" target="_blank" rel="noopener">
+    <a style="color:#555" href="https://www.linkedin.com/in/shoriyu" target="_blank" rel="noopener">
         <i class="fab fa-linkedin fa-3x"></i>
     </a>&nbsp; &nbsp; 
-    <a href="mailto:lixyu57@gmail.com" >
+    <a style="color:#555" href="mailto:lixyu57@gmail.com" >
         <i class="fas fa-envelope fa-3x"></i>
     </a>
 </p>
