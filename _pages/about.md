@@ -12,3 +12,7 @@ I was born and raised in Shanghai. I spent a couple years of middle school in Se
 The motivation of the blog is simple: I have the time to do it as I'm on my gap year; and, my current intern position at Arm requires me to read and experiment extensively on open-source code and technology.
 
 So, why not? I guess.
+
+<a style="color:#ffffff" href="https://github.com/lishpr" target="_blank" rel="noopener">
+    <i class="fab fa-github big-icon"></i>
+</a>
