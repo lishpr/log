@@ -11,7 +11,7 @@ The technologies of choice currently used in the platforms provided by our partn
 In this report, we are going to give a broad overview of the tech specification of containers in a whole.  
 <br />
 
-# Linux Namespace
+## Linux Namespace
 
 The Linux Namespace provides seven types of isolation. Namely ```CLONE_NEWCGROUP```, ```CLONE_NEWIPC```, ```CLONE_NEWNET```, ```CLONE_NEWNS```, ```CLONE_NEWPID```, ```CLONE_NEWUSER```, and ```CLONE_NEWUT```. 
 
@@ -46,7 +46,7 @@ pid_t lxc_clone(int (*fn)(void *), void *arg, int flags, int *pidfd)
 ```
 <br />
 
-# Control Groups
+## Control Groups
 
 Control Groups (CGroups) is a way in Linux to allocate (or, restrict) system resources to processes. By using the command ```lssubsys```, we could see the system resources (or, in technical terms, subsystems) that Linux allows us to manipulate.
 
@@ -67,7 +67,7 @@ rdma /sys/fs/cgroup/rdma
 
 The manipulation of CGroup subsystems in Linux is done through a file-based approach. Where we could add lines to files in the directories shown above to achieve the manipulation. And, by adding a new directory in any subsystem, we create a new CGroup. The new directory is populated automatically with the same files in its parent directory.
 
-## Docker example
+### Docker example
 
 Let's take a closer look through an example with Docker. We start by running a container.
 ```bash
@@ -100,7 +100,7 @@ We could see that the quota set via flags in our docker command is channelled in
 
 <br />
 
-# Union File System
+## Union File System
 A docker image is essentially just a tarball. We could examine the fact by exporting an image and then checking its insides by unpacking the tarball. And, we could in fact run a container without the UnionFS, we could map any desired root file system to the container we're about to run. 
 
 So, what makes the UnionFS different? When we pull an image from the docker hub, we notice that the image is being pulled in layers. And, that is right, every action we perform on the current file system, in UnionFS, will become another layer upon the current file system. This enables image reuse across different containers.
