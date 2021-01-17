@@ -59,6 +59,7 @@ bit addr   0   15  31  47  63      95      127
 value      | 1 | 2 | 3 | ? |   ?   |   ?   |
 ```
 * Then, it will transfer the ```int16_t``` integers to ```int32_t``` length in the order from the last to the first.
+
 ```c
 bit addr   0   15  31  47  63      95      127
 value      | 1 | 2 | 3 | ? |   3   |   ?   |
@@ -84,6 +85,7 @@ value      |   1   |   2   |   3   | 65535 |
                                       add
 ```
 Now we are done, the ```intset``` now looks like:
+
 ```c
 intset->encoding = INTSET_ENC_INT32;
 intset->length = 4;
