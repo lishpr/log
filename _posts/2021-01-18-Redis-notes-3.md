@@ -8,13 +8,13 @@ tags: Docs
 
 # Redis datatypes
 
-After spending some seemingly bewildering time of introducing the basic data structures in Redis. We are getting into the Redis datatype system.
+After spending some seemingly bewildering time of introducing the basic data structures in Redis, we are getting into the Redis datatype system.
 
 > "Wait, haven't we *already* been talking about datatypes?"
 
 Well, yes and no.
 
-In the previous chapters, we introduced ```sds```, skip lists, ziplists, ```intset```, etc. Those are the *implementations* of the datatypes that users interacts with, such as strings, lists, and sets. We have ```sds``` and ```int``` for strings, skip lists, ziplists, and ```intset``` for list and sets, etc.
+In the previous chapters, we introduced ```sds```, skip lists, ziplists, ```intset```, etc. Those are the *implementations* of the datatypes that users interact with, such as strings, lists, and sets. We have ```sds``` and ```long``` for strings, skip lists, ziplists, and ```intset``` for list and sets, etc.
 
 Therefore, there needs to be a way of keep tracking of the datatypes for each key, in spite of their implementation. And as a result, users should be able to call methods, for example ```ZADD```, on values regardless of the internal data structure, which could be dicts or ```intset```.
 
