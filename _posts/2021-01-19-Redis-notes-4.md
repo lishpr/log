@@ -125,7 +125,7 @@ It is possible to combine both AOF and RDB in the same instance. Notice that, in
 
 ### 4.5.3 Isolation
 
-*Needs to be checked with the lasted version.*
+*Needs to be checked with the latest version.*
 
 ### 4.5.4 Durability
 
