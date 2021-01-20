@@ -113,8 +113,8 @@ Then,
 # sysctl -w net.ipv4.ip_forward=1
 # iptables -t nat -A POSTROUTING -s 10.1.1.0/24 ! -o br0 -j MASQUERADE
 # systemd-resolve --status
-# mkdir -p /etc/netns/br0/
-# echo "nameserver 100.100.5.6" > /etc/netns/br0/resolv.conf
+# mkdir -p /etc/netns/40995/
+# echo "nameserver 100.100.5.6" > /etc/netns/40995/resolv.conf
 ```
 
 Now, the container should be able to connect to the internet.
