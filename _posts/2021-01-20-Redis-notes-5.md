@@ -22,9 +22,9 @@ Similar to the ```watched_keys``` mechanism we mentioned in the last chapter, su
 
 Therefore, the ```SUBSCRIBE``` command is roughly implemented as
 ```python
+# pseudocode
 def SUBSCRIBE(client, channels):
     redisServer.pubsub_channels[channel].append(client)
-
 ```
 After learning the dict structure of ```pubsub_channel```, it's straightforward to think of the implementation for ```PUBLISH```, which just traverses the linked-list of clients for the channel, and sent messages accordingly.
 
