@@ -12,7 +12,7 @@ This is the first week of development of Dokrust. As a fork of [vas-quod](https:
 
 <br />
 
-# Improvements
+## Improvements
 
 ### Interactive shell
 
