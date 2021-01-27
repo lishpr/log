@@ -6,7 +6,7 @@ comments: false
 tags: Docs
 ---
 
-Well, the topic of this article is an algorithm, rather than a not-so-ideal behavior. This article will be an summary of the guide [here](https://mp.weixin.qq.com/s/nMUHqvwzG2LmWA9jMIHwQQ).
+Well, the topic of this article is an algorithm, rather than a not-so-ideal behavior. This article will be a summary of the guide [here](https://mp.weixin.qq.com/s/nMUHqvwzG2LmWA9jMIHwQQ).
 
 The core of solving a backtracking problem is traversing the decision tree related to the problem. There are three keys that would be helpful to bear in mind:
 
