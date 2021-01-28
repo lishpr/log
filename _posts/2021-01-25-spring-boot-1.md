@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Getting to Know Spring Boot: 1"
+title:  "Spring Boot Quickstart"
 author: "Shori"
 comments: false
 tags: Spring
