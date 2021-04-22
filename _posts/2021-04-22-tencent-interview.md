@@ -8,11 +8,11 @@ tags: Career
 
 ### Notice: Chinese Content
 
-Chinese characters mess up with the word counting very much for systems that did not take foreign languages into account when developing. Chinese is written without spaces, or is a *Scriptio continua*. Therefore, the word count designed for English tends to recognize entire sentences into a word. This messes up a lot with my somewhat tidy homepage.
+Chinese characters go not very well with the word counting systems that did not take foreign languages into account when developing. Chinese is written without spaces, or is a *Scriptio continua*. Therefore, the word count designed for English tends to recognize entire sentences into words. This messes up a lot with my somewhat tidy homepage. This paragraph is a simple workaround to reach the word limit for the snippet that is showcased on my homepage.
 
 <br>
 
-本文最初发于[牛客网](https://www.nowcoder.com/discuss/646742?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack)。
+本文最初发布于[牛客网](https://www.nowcoder.com/discuss/646742?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack)。
 
 目前已收到入职指引，回馈一下地里。八股文问了啥忘了，那就主要介绍format和timeline吧。我个人情况就，转码硕，之前有两段二线厂实习这样。
 
@@ -41,13 +41,13 @@ Chinese characters mess up with the word counting very much for systems that did
 
 ## 3月21日笔试
 
-菜狗1.2/5。不得不说腾讯笔试题和leetcode的手感差别很大。。。而且好像我记得有题我应该至少是次优的做法却过不了多少testcase= =
+菜狗1.2/5。不得不说腾讯笔试题和leetcode的手感差别很大。。。而且好像我记得有题我应该至少是次优的做法却过不了多少test case= =
 
 不说了就是菜。
 
 <br>
 
-### 3月22日变灰，心情很糟糕。3月24日被捞，很开心。（单纯
+#### 3月22日变灰，心情很糟糕。3月24日被捞，很开心。（单纯
 
 <br>
 
@@ -55,7 +55,7 @@ Chinese characters mess up with the word counting very much for systems that did
 
 视频面试。先八股文，略。
 
-问了一个智力题（题面和解法：https://mp.weixin.qq.com/s/y_f55KgTs8W4oiSLyTMxeA），面试官报完题面之后我笑了一下，心里知道惨了，不会，但是面试官以为是因为我做过才笑的哈哈哈。
+问了一个智力题（[题面和解法](https://mp.weixin.qq.com/s/y_f55KgTs8W4oiSLyTMxeA)），面试官报完题面之后我笑了一下，心里知道惨了，不会，但是面试官以为是因为我做过才笑的哈哈哈。
 
 然后不知所云了20分钟之后面试官手把手教着做完了。搞完我说，你看我是没做过吧（
 
@@ -104,9 +104,9 @@ def shuffle(deck):
 
 视频面试。没有八股文，全程问目前的实习内容。。。
 
-算法题，给了我一串乱码字符串，让我翻译成明文。我：懵，直接和他说不会。
+算法题，给了我一串乱码字符串 `TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCB` ，让我翻译成明文。我：懵，直接和他说不会。
 
-面试官和我说是base64解码，俺不会于是又给了我一道lc1204 remove all adjacent duplicates in string ii。stack秒。
+面试官和我说是base64解码，俺没答出来于是又给了我一道lc1204 Remove All Adjacent Duplicates in String II。stack秒。
 
 反问得知是腾讯云。
 
@@ -116,7 +116,7 @@ def shuffle(deck):
 
 视频面试。先大篇幅进行八股文快速问答，略。
 
-算法题，给一个m*n矩阵，你在左上格子，每次只能向右或向下走一格，求到右下格子有多少种走法。回溯法秒。
+算法题，给一个`m*n`矩阵，你在左上格子，每次只能向右或向下走一格，求到右下格子有多少种走法。回溯法秒。
 
 <br>
 
